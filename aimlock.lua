@@ -5,7 +5,7 @@ local isCamLocked = true -- Camlock enabled by default
 
 -- FOV Circle
 local fovCircle = Drawing.new("Circle")
-fovCircle.Visible = true
+fovCircle.Visible = false
 fovCircle.Color = Color3.new(1, 0, 0) -- Red
 fovCircle.Thickness = 2
 fovCircle.Radius = aimRadius
@@ -74,7 +74,7 @@ local function showNotification(text)
     frame.AnchorPoint = Vector2.new(0, 1)
     frame.Position = UDim2.new(0, 10, 1, -10)
     frame.Size = UDim2.new(0, 200, 0, 40)
-    frame.BackgroundTransparency = 0.5
+    frame.BackgroundTransparency = 1
     frame.BackgroundColor3 = Color3.new(0, 0, 0)
 
     local label = Instance.new("TextLabel", frame)
